@@ -110,6 +110,7 @@ O próximo passo é levar o sistema para a nuvem com o **Firebase**:
 
 ## Sobre
 
-Desenvolvido por **[Seu Nome](https://github.com/SEU-USUARIO)** para a **T-Fardas**.
+Desenvolvido por **[Diego gobbis](https://github.com/DiegoGobbisDeveloper)** para a **T-Fardas**.
+
 
 Se você tem uma loja e se identificou com esse dia a dia, ou quer trocar uma ideia sobre o projeto, fique à vontade para entrar em contato.
