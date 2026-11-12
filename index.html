@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Fardas · Controle de Estoque</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap">
+<!-- jsPDF: gera os relatórios em PDF (se não carregar, usa a impressão do navegador) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<aside class="side">
+  <div class="logo" onclick="ir('painel')" title="Painel inicial"><div class="marca"></div></div>
+  <nav class="nav">
+    <button data-tela="painel"><span class="ico" data-i="painel"></span>Painel</button>
+    <button data-tela="clientes"><span class="ico" data-i="clientes"></span>Clientes<span class="badge" id="bCli" hidden></span></button>
+    <button data-tela="produtos"><span class="ico" data-i="produtos"></span>Produtos<span class="badge" id="bProd" hidden></span></button>
+    <button data-tela="vitrine"><span class="ico" data-i="vitrine"></span>Vitrine</button>
+    <button data-tela="vendas"><span class="ico" data-i="vendas"></span>Vendas</button>
+    <button data-tela="caixa"><span class="ico" data-i="caixa"></span>Caixa</button>
+  </nav>
+  <div class="side-rodape">
+    <button class="perigo" onclick="limparSistema()"><span data-i="lixo"></span> Limpar sistema</button>
+    <button onclick="exportarBackup()"><span data-i="baixar"></span> Salvar backup</button>
+    <button onclick="$('#fileBackup').click()"><span data-i="enviar"></span> Restaurar backup</button>
+    <input type="file" id="fileBackup" accept=".json" hidden>
+  </div>
+</aside>
+
+<main id="main"></main>
+<div id="modal"></div>
+<div id="toast"></div>
+
+<script src="js/logo.js"></script>
+<script src="js/icones.js"></script>
+<script src="js/vitrine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
